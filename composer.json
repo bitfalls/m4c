@@ -1,0 +1,16 @@
+{
+    "name": "bitfalls/m4c",
+    "description": "Mining4Charity landing page",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "vlucas/phpdotenv": "^2.4",
+        "delfimov/translate": "^2.4",
+        "psr/container": "^1.0"
+    },
+    "prefer-stable": true,
+    "require-dev": {
+        "symfony/var-dumper": "^4.0"
+    }
+}

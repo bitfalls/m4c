@@ -1,0 +1,1 @@
+ccminer.exe -a lyra2v2 -o stratum+tcp://lyra2.easymine.online:5000 -u VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9 -p x
