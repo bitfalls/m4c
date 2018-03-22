@@ -16,7 +16,10 @@ If you do (recommended!), follow instructions:
 git clone https://github.com/bitfalls/m4c
 cd m4c
 composer install
+cp .env.example .env
 ```
+
+In the newly created `.env` file, replace `your_api_key` with an actual API key value you get from Etherscan.io.
 
 You will need Composer installed. If you don't have it, follow instructions [here](https://getcomposer.org/doc/00-intro.md) or [download a virtual machine](http://www.sitepoint.com/re-introducing-vagrant-right-way-start-php/) which has all this prepared for you (recommended!).
 
@@ -58,7 +61,10 @@ Ako imate (preporučljivo!), pratite upute:
 git clone https://github.com/bitfalls/m4c
 cd m4c
 composer install
+cp .env.example .env
 ```
+
+U novokreiranoj `.env` datoteci zamijenite `your_api_key` vrijednost s API ključem kojeg preuzmete s Etherescan.io stranice. 
 
 Trebati će sam Composer. Ako ga nemate instaliranog, pratite upute 
  [ovdje](https://getcomposer.org/doc/00-intro.md) ili [preuzimte virtualnu mašinu](http://www.sitepoint.com/re-introducing-vagrant-right-way-start-php/) koja sve to već ima spremno za vas.
