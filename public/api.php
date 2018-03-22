@@ -95,7 +95,7 @@ function getBTCmined($w){
     return number_format($mined, 5);
 	*/
 	//for now
-	return 0;
+	return "N/A";
 }
 
 function getBTCminers($w){
@@ -109,7 +109,7 @@ function getBTCminers($w){
     }
     return $i;*/
 	//for now
-	return 0;
+	return "N/A";
 }
 
 header('Content-Type: application/json');
