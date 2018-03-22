@@ -37,6 +37,7 @@ $t->setLanguage($l);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
           rel="stylesheet">
     <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
@@ -72,6 +73,11 @@ $t->setLanguage($l);
         .flag {
             height: 20px;
         }
+		
+		.partner {
+			float:left;
+			padding-right:35px;
+		}
 
     </style>
 </head>
@@ -279,16 +285,16 @@ $t->setLanguage($l);
 
     <div class="row">
         <h3><?= $t->t('partners') ?></h3>
-        <div class="owl-carousel owl-theme">
-            <div class="item"><a target="_blank"
+        <div>
+            <div class="item partner"><a target="_blank"
                                  href="http://digitalcalligraphy.hr"><img
                             style="width:220px;" src="images/dc.png"
                             alt="Digital Calliraphy"></a></div>
-            <div class="item"><a target="_blank"
+            <div class="item partner"><a target="_blank"
                                  href="https://bitfalls.com/<?php echo ($t->getLanguage() == 'hr') ? 'hr' : 'en' ?>/mining-cryptocurrency-charity"><img
                             style="width:220px;" src="images/bf.png"
                             alt="Bitfalls"></a></div>
-            <div class="item"><a target="_blank" href="http://nanopool.org"><img
+            <div class="item partner"><a target="_blank" href="http://nanopool.org"><img
                             style="width:220px;" src="images/np.png"
                             alt="nanopool"></a></div>
         </div>
@@ -341,17 +347,6 @@ $t->setLanguage($l);
   refresh();
   setInterval(refresh, 10000);
 
-  $(document).ready(function () {
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      items: 3,
-      loop: true,
-      margin: 10,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true
-    });
-  });
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
