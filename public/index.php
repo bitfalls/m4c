@@ -246,6 +246,9 @@ $t->setLanguage($l);
         </div>
     </div>
 
+    <div style="text-align: center;">
+        <a style="display: block;" href="<?= $t->t('piclink'); ?>"><img src="<?= $t->t('picsource') ?>" alt="<?= $t->t('piclink'); ?>"></a>
+    </div>
 
     <div class="row" id="data-panels">
         <ul class="nav nav-tabs">

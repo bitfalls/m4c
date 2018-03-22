@@ -26,6 +26,9 @@ return [
     "tab3" => "Download",
     "tab4" => "Savjeti",
 
+    "piclink" => 'https://bitfalls.com/hr/2018/03/22/mining-for-charity-temporarily-redirect-your-hashpower-to-help-those-in-need/',
+    "picsource" => 'images/ddz/ddz-head.png',
+
 
     "tab1_text" => <<<TAB1
 				<h3>Zašto?</h3>
