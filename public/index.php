@@ -291,7 +291,7 @@ $t->setLanguage($l);
                             style="width:220px;" src="images/dc.png"
                             alt="Digital Calliraphy"></a></div>
             <div class="item partner"><a target="_blank"
-                                 href="https://bitfalls.com/<?php echo ($t->getLanguage() == 'hr') ? 'hr' : '' ?>2018/03/22/mining-for-charity-temporarily-redirect-your-hashpower-to-help-those-in-need/"><img
+                                 href="https://bitfalls.com/<?php echo ($t->getLanguage() == 'hr') ? 'hr/' : '' ?>2018/03/22/mining-for-charity-temporarily-redirect-your-hashpower-to-help-those-in-need/"><img
                             style="width:220px;" src="images/bf.png"
                             alt="Bitfalls"></a></div>
             <div class="item partner"><a target="_blank" href="http://nanopool.org"><img
