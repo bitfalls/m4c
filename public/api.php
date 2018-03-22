@@ -20,7 +20,7 @@ foreach (json_decode(file_get_contents("php://input")) as $ticker => $w) {
 
 function getETHraised($w){
     $etherscan_result = json_decode(file_get_contents("https://api.etherscan.io/api?module=account&action=balance&address=".$w."&tag=latest&apikey=".getenv('ETHERSCAN_KEY')));
-    $raised = ($etherscan_result->result/1000000000000000000);
+    $raised = ((int)$etherscan_result->result/1000000000000000000);
     return number_format($raised,5);
 }
 
