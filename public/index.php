@@ -212,6 +212,38 @@ $t->setLanguage($l);
                 </div>
             </div>
         </div>
+		<div class="col-md-6" style="padding:0">
+            <div class="col-xs-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading"
+                         style="text-align: center;"><?= $t->t('btc_raised') ?></div>
+                    <div class="panel-body" id="boxBTCraised"
+                         style="text-align: center;">
+                        N/A
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading"
+                         style="text-align: center;"><?= $t->t('btc_mined') ?></div>
+                    <div class="panel-body" id="boxBTCmined"
+                         style="text-align: center;">
+                        N/A
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading"
+                         style="text-align: center;"><?= $t->t('btc_miners') ?></div>
+                    <div class="panel-body" id="boxBTCminers"
+                         style="text-align: center;">
+                        N/A
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -272,12 +304,14 @@ $t->setLanguage($l);
       'en': {
         'ETH': '0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A',
         'VTC': 'VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9',
-        'UBQ': '0xC0057917E1bB3C684F24E18a99eEF8B1E632944b'
+        'UBQ': '0xC0057917E1bB3C684F24E18a99eEF8B1E632944b',
+        'BTC': '12o1KVeYig3i5JczvohZhYDcAKaS9LsWc5'
       },
       'hr': {
         'ETH': '0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A',
         'VTC': 'VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9',
-        'UBQ': '0xC0057917E1bB3C684F24E18a99eEF8B1E632944b'
+        'UBQ': '0xC0057917E1bB3C684F24E18a99eEF8B1E632944b',
+        'BTC': '12o1KVeYig3i5JczvohZhYDcAKaS9LsWc5'
       }
     };
 
