@@ -16,6 +16,10 @@ return [
     "vtc_raised" => "Sakupljeno VTC",
     "vtc_mined"  => "Izrudareno VTC",
     "vtc_miners" => "VTC rudara",
+	
+	"btc_raised" => "Sakupljeno BTC",
+    "btc_mined"  => "Izrudareno BTC",
+    "btc_miners" => "BTC rudara",
 
     "tab1" => "Uputa",
     "tab2" => "Adrese",
@@ -32,7 +36,7 @@ return [
 				<li>Ako ste početnik, preuzmite potrebni softver u "Download" tabu, pokrenite odabranu ".bat" datoteku, i pustite svoju grafičku karticu da kopa u ime dobrotvornih svrha.</li>
 				<li>Ako ste iskusni rudar i znate sve potrebne detalje, preusmjerite svoj Hashrate na par sati na neku od donjih adresa (koliko god dugo želite, nema minimuma ni maksimuma):
 				<ul>
-				<li>ETH: 0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A</li><li>VTC: VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9</li><li>UBQ: 0xC0057917E1bB3C684F24E18a99eEF8B1E632944b</li>
+				<li>ETH: 0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A</li><li>VTC: VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9</li><li>UBQ: 0xC0057917E1bB3C684F24E18a99eEF8B1E632944b</li><li>BTC: 12o1KVeYig3i5JczvohZhYDcAKaS9LsWc5 <b>(za sada samo donacije)</b></li>
 </ul></li>
 				</ul>
 				</p>
