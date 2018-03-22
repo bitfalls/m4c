@@ -84,7 +84,7 @@ function getVTCminers($w){
 
 function getBTCraised($w){
     $explorer_result = json_decode(file_get_contents("https://blockchain.info/q/addressbalance/".$w));
-    return number_format((int)$explorer_result,5);
+    return number_format(((int)$explorer_result/100000000),5);
 }
 
 
