@@ -354,6 +354,17 @@ $t->setLanguage($l);
   });
 </script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106217299-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106217299-3');
+</script>
+
+
 <div id="footer">
     <div class="container">
     </div>
