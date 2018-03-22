@@ -17,6 +17,10 @@ return [
     "vtc_raised" => "VTC raised",
     "vtc_mined"  => "VTC mined",
     "vtc_miners" => "VTC miners",
+	
+	"btc_raised" => "BTC raised",
+    "btc_mined"  => "BTC mined",
+    "btc_miners" => "BTC miners",
 
     "tab1" => "Instructions",
     "tab2" => "Addresses",
@@ -33,7 +37,7 @@ return [
 				<li>If you are a beginner, download the .bat file, copy it to your miner and run it for a few hours. See the downloads tab for more info.</li>
 				<li>If you are an experienced miner and you know all the details, redirect your Hashrate for a few hours (as long as you want, no minimum or maximum) to one of the following addresses:
 				<ul>
-				<li>ETH: 0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A</li><li>VTC: VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9</li><li>UBQ: 0xC0057917E1bB3C684F24E18a99eEF8B1E632944b</li>
+				<li>ETH: 0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A</li><li>VTC: VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9</li><li>UBQ: 0xC0057917E1bB3C684F24E18a99eEF8B1E632944b</li><li>BTC: 12o1KVeYig3i5JczvohZhYDcAKaS9LsWc5 <b>(donations only for now)</b></li>
 </ul></li>
 				</ul>
 				</p>

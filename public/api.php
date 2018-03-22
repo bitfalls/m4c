@@ -82,5 +82,35 @@ function getVTCminers($w){
     return $i;
 }
 
+function getBTCraised($w){
+    $explorer_result = json_decode(file_get_contents("https://blockchain.info/q/addressbalance/".$w));
+    return number_format(((int)$explorer_result/100000000),5);
+}
+
+
+function getBTCmined($w){
+	/*
+    $pool_result = json_decode(file_get_contents("https://vertcoin.easymine.online/json/miner2.php?address=".$w));
+    $mined = $pool_result->vtc_balance;
+    return number_format($mined, 5);
+	*/
+	//for now
+	return "N/A";
+}
+
+function getBTCminers($w){
+	/*
+    $pool_result = json_decode(file_get_contents("https://vertcoin.easymine.online/json/miner2.php?address=".$w));
+    $i = 0;
+    foreach($pool_result->workers as $id => $r){
+    	if($r->hashRate>0){
+    		$i++;
+    	}
+    }
+    return $i;*/
+	//for now
+	return "N/A";
+}
+
 header('Content-Type: application/json');
 die(json_encode($response));
