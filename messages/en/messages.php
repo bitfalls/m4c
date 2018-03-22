@@ -26,7 +26,7 @@ return [
     "tab1_text" => <<<TAB1
 				
 				<h3>Why?</h3>
-				<p>Mining4Charity has been established to unite gamers, miners, and all people of good will in an effort to help those most in need and do something unselfish. Read the project's full story <a href="https://bitfalls.com/mining-cryptocurrency-charity">over at Bitfalls</a>.</p>
+				<p>Mining4Charity has been established to unite gamers, miners, and all people of good will in an effort to help those most in need and do something unselfish. Read the project's full story <a href="https://bitfalls.com/2018/03/22/mining-for-charity-temporarily-redirect-your-hashpower-to-help-those-in-need/">over at Bitfalls</a>.</p>
 				<h3>How?</h3>
 				<p>Simple:
 				<ul>

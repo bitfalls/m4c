@@ -87,5 +87,5 @@ Nekad mi, nekad puštamo na glasovanje posjetiteljima. Ovisi o situaciji. Samo j
 
 Možete pročitati više o projektu ovdje: [Mining4Charity - Redovito dobrotvorno rudarenje][charityposthr].
 
-[charityposthr]: https://bitfalls.com/hr/mining-cryptocurrency-charity
-[charityposten]: https://bitfalls.com/mining-cryptocurrency-charity
+[charityposthr]: https://bitfalls.com/hr/2018/03/22/mining-for-charity-temporarily-redirect-your-hashpower-to-help-those-in-need/
+[charityposten]: https://bitfalls.com/2018/03/22/mining-for-charity-temporarily-redirect-your-hashpower-to-help-those-in-need/

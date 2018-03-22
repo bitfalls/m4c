@@ -25,7 +25,7 @@ return [
 
     "tab1_text" => <<<TAB1
 				<h3>Zašto?</h3>
-				<p>Mining4Charity je projekt osnovan da ujedini gamere, rudare i sve ljude dobrih namjera u nečem nesebičnom - pomaganju onima kojima je najviše potrebno. Pročitajte cijelu priču projekta <a href="https://bitfalls.com/hr/mining-cryptocurrency-charity">u ovom članku na Bitfalls.com</a>.</p>
+				<p>Mining4Charity je projekt osnovan da ujedini gamere, rudare i sve ljude dobrih namjera u nečem nesebičnom - pomaganju onima kojima je najviše potrebno. Pročitajte cijelu priču projekta <a href="https://bitfalls.com/hr/2018/03/22/mining-for-charity-temporarily-redirect-your-hashpower-to-help-those-in-need/">u ovom članku na Bitfalls.com</a>.</p>
 				<h3>Kako?</h3>
 				<p>Jednostavno:
 				<ul>
