@@ -4,7 +4,7 @@ use Dotenv\Dotenv;
 
 require_once '../vendor/autoload.php';
 
-$dotenv = new Dotenv(__DIR__.'/..');
+$dotenv = new Dotenv(__DIR__ . '/..');
 $dotenv->load();
 
 use DElfimov\Translate\Translate;
@@ -249,7 +249,8 @@ $t->setLanguage($l);
                                  href="http://digitalcalligraphy.hr"><img
                             style="width:220px;" src="images/dc.png"
                             alt="Digital Calliraphy"></a></div>
-            <div class="item"><a target="_blank" href="http://bitfalls.com"><img
+            <div class="item"><a target="_blank"
+                                 href="https://bitfalls.com/<?php echo ($t->getLanguage() == 'hr') ? 'hr' : 'en' ?>/mining-cryptocurrency-charity"><img
                             style="width:220px;" src="images/bf.png"
                             alt="Bitfalls"></a></div>
             <div class="item"><a target="_blank" href="http://nanopool.org"><img

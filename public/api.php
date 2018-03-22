@@ -20,8 +20,8 @@ foreach (json_decode(file_get_contents("php://input")) as $ticker => $w) {
 
 function getETHraised($w){
     $etherscan_result = json_decode(file_get_contents("https://api.etherscan.io/api?module=account&action=balance&address=".$w."&tag=latest&apikey=".getenv('ETHERSCAN_KEY')));
-    $eth_raised = ($etherscan_result->result/1000000000000000000);
-    return number_format($eth_raised,5);
+    $raised = ($etherscan_result->result/1000000000000000000);
+    return number_format($raised,5);
 }
 
 
@@ -42,8 +42,8 @@ function getETHminers($w){
 function getUBQraised($w){
     $explorer_result = json_decode(file_get_contents("https://ubiqexplorer.com/api/Account/".$w));
 
-    $UBQ_raised = $explorer_result->balance;
-    return number_format($UBQ_raised,5);
+    $raised = $explorer_result->balance;
+    return number_format($raised,5);
 }
 
 
@@ -60,33 +60,26 @@ function getUBQminers($w){
 }
 
 function getVTCraised($w){
-    //address on bittrex, needs checking
-    //https://explore.UBQ.tech/hashes/f6e0a3d764218d82a203c8615cc5df4bf6b56635467ae49abcc5d77954922c20
-
-    $UBQ_raised = 0;
-    return number_format($UBQ_raised,5);
+    $explorer_result = json_decode(file_get_contents("http://explorer.vertcoin.info/ext/getbalance/".$w));
+    return number_format($explorer_result,5);
 }
 
 
 function getVTCmined($w){
-    //$pool_result = json_decode(file_get_contents("https://UBQmining.com/api/v1/addresses/".$w."/summary"));
-    //$UBQ_mined = $pool_result->balance;
-    //return number_format($UBQ_mined,5);
-    return 0;
+    $pool_result = json_decode(file_get_contents("https://vertcoin.easymine.online/json/miner2.php?address=".$w));
+    $mined = $pool_result->vtc_balance;
+    return number_format($mined, 5);
 }
 
-
 function getVTCminers($w){
-    //$pool_result = json_decode(file_get_contents("https://UBQmining.com/api/v1/addresses/".$w."/workers"));
-    //$i=0;
-    //foreach($pool_result as $r){
-    //	if($r->intervals[0]->hash_rate>0){
-    //		$i++;
-    //	}
-    //}
-    //$UBQ_workers = count($pool_result);
-    //return $i;
-    return 0;
+    $pool_result = json_decode(file_get_contents("https://vertcoin.easymine.online/json/miner2.php?address=".$w));
+    $i = 0;
+    foreach($pool_result->workers as $id => $r){
+    	if($r->hashRate>0){
+    		$i++;
+    	}
+    }
+    return $i;
 }
 
 header('Content-Type: application/json');
