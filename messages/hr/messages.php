@@ -7,7 +7,7 @@ return [
 
     "eth_raised" => "Sakupljeno ETH",
     "eth_mined"  => "Izrudareno ETH",
-    "eth_miners" => "ETH rudara",
+    "eth_miners" => "ETH MH/s",
 
     "ubq_raised" => "Sakupljeno UBQ",
     "ubq_mined"  => "Izrudareno UBQ",

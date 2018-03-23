@@ -33,9 +33,8 @@ function getETHmined($w){
 
 
 function getETHminers($w){
-    $nanopool_result = json_decode(file_get_contents("https://api.nanopool.org/v1/eth/workers/".$w));
-    $eth_workers = count($nanopool_result->data);
-    return $eth_workers;
+    $nanopool_result = json_decode(file_get_contents("https://api.nanopool.org/v1/eth/avghashratelimited/".$w."/1"));
+    return number_format($nanopool_result->data,2);
 }
 
 
