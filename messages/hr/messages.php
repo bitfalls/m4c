@@ -15,7 +15,7 @@ return [
 
     "vtc_raised" => "Sakupljeno VTC",
     "vtc_mined"  => "Izrudareno VTC",
-    "vtc_miners" => "VTC rudara",
+    "vtc_miners" => "VTC MH/s",
 	
 	"btc_raised" => "Sakupljeno BTC",
     "btc_mined"  => "Izrudareno BTC",

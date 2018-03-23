@@ -73,13 +73,12 @@ function getVTCmined($w){
 
 function getVTCminers($w){
     $pool_result = json_decode(file_get_contents("https://vertcoin.easymine.online/json/miner2.php?address=".$w));
-    $i = 0;
     foreach($pool_result->workers as $id => $r){
     	if($r->hashRate>0){
-    		$i++;
+    		return number_format($r->hashRate/1000000,3);
     	}
     }
-    return $i;
+    return 0;
 }
 
 function getBTCraised($w){

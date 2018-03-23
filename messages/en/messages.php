@@ -16,7 +16,7 @@ return [
 
     "vtc_raised" => "VTC raised",
     "vtc_mined"  => "VTC mined",
-    "vtc_miners" => "VTC miners",
+    "vtc_miners" => "VTC MH/s",
 	
 	"btc_raised" => "BTC raised",
     "btc_mined"  => "BTC mined",
