@@ -37,6 +37,13 @@ $t->setLanguage($l);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta property="og:url" content="http://mining4charity.eu/"/>
+	<meta property="og:title" content="Mining4Charity"/>
+	<meta property="og:description" content="Mining for charity"/>
+	<meta property="og:image" content="http://mining4charity.eu/images/m4c_logo.png"/>
+	<meta property="og:image:alt" content="Mining for charity"/>
+	
 	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
           rel="stylesheet">
