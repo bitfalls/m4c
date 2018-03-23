@@ -37,6 +37,13 @@ $t->setLanguage($l);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta property="og:url" content="http://mining4charity.eu/"/>
+	<meta property="og:title" content="Mining4Charity"/>
+	<meta property="og:description" content="Mining for charity"/>
+	<meta property="og:image" content="http://mining4charity.eu/images/m4c_logo.png"/>
+	<meta property="og:image:alt" content="Mining for charity"/>
+	
 	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
           rel="stylesheet">
@@ -82,29 +89,36 @@ $t->setLanguage($l);
     </style>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a><?= $t->t('header_title') ?></a>
-                </li>
-                <li><a href="index.php?l=hr"><img class="flag"
-                                                  src="images/hr.jpg"/></a></li>
-                <li><a href="index.php?l=en"><img class="flag"
-                                                  src="images/en.jpg"/></a></li>
-                <li><a style="text-decoration: underline"
-                       href="https://github.com/bitfalls/m4c"><?= $t->t('callforhelp') ?></a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    
+<div class="container">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><?= $t->t('header_title') ?></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.php?l=hr"><img class="flag" src="images/hr.jpg"/></a></li>
+					<li><a href="index.php?l=en"><img class="flag" src="images/en.jpg"/></a></li>
+					<li><a style="text-decoration: underline" href="https://github.com/bitfalls/m4c"><?= $t->t('callforhelp') ?></a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
 </div>
 
 
 <div class="container">
     <div class="row">
-        <br/><br/><br/>
         <table align="center">
             <tr>
                 <td></td>
