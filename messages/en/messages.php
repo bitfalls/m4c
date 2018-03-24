@@ -27,6 +27,8 @@ return [
     "tab3" => "Download",
     "tab4" => "Tips & Tricks",
 
+    "collected" => 'Estimated total so far',
+
     "piclink" => 'https://bitfalls.com/2018/03/22/mining-for-charity-temporarily-redirect-your-hashpower-to-help-those-in-need/',
     "picsource" => 'images/ddz/ddz-head.png',
 

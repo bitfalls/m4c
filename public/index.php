@@ -126,7 +126,7 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('eth_raised') ?></div>
-                    <div class="panel-body" id="boxETHraised"
+                    <div class="panel-body box" id="boxETHraised"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -136,7 +136,7 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('eth_mined') ?></div>
-                    <div class="panel-body" id="boxETHmined"
+                    <div class="panel-body box" id="boxETHmined"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -146,7 +146,7 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('eth_miners') ?></div>
-                    <div class="panel-body" id="boxETHminers"
+                    <div class="panel-body box" id="boxETHminers"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -159,7 +159,7 @@ $t->setLanguage($l);
 
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('ubq_raised') ?></div>
-                    <div class="panel-body" id="boxUBQraised"
+                    <div class="panel-body box" id="boxUBQraised"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -169,7 +169,7 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('ubq_mined') ?></div>
-                    <div class="panel-body" id="boxUBQmined"
+                    <div class="panel-body box" id="boxUBQmined"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -179,7 +179,7 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('ubq_miners') ?></div>
-                    <div class="panel-body" id="boxUBQminers"
+                    <div class="panel-body box" id="boxUBQminers"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -191,7 +191,7 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('vtc_raised') ?></div>
-                    <div class="panel-body" id="boxVTCraised"
+                    <div class="panel-body box" id="boxVTCraised"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -201,7 +201,7 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('vtc_mined') ?></div>
-                    <div class="panel-body" id="boxVTCmined"
+                    <div class="panel-body box" id="boxVTCmined"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -211,7 +211,7 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('vtc_miners') ?></div>
-                    <div class="panel-body" id="boxVTCminers"
+                    <div class="panel-body box" id="boxVTCminers"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -223,7 +223,7 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('btc_raised') ?></div>
-                    <div class="panel-body" id="boxBTCraised"
+                    <div class="panel-body box" id="boxBTCraised"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -233,7 +233,7 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('btc_mined') ?></div>
-                    <div class="panel-body" id="boxBTCmined"
+                    <div class="panel-body box" id="boxBTCmined"
                          style="text-align: center;">
                         N/A
                     </div>
@@ -243,11 +243,17 @@ $t->setLanguage($l);
                 <div class="panel panel-default">
                     <div class="panel-heading"
                          style="text-align: center;"><?= $t->t('btc_miners') ?></div>
-                    <div class="panel-body" id="boxBTCminers"
+                    <div class="panel-body box" id="boxBTCminers"
                          style="text-align: center;">
                         N/A
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="panel col-md-12 col-xs-12" style="text-align: center">
+            <div class="panel-body">
+            <h3><?= $t->t('collected'); ?>: <span id="collected">N/A</span></h3>
             </div>
         </div>
     </div>
@@ -330,6 +336,7 @@ $t->setLanguage($l);
       data: JSON.stringify(addresses['<?= $t->getLanguage() ?>'])
     })
       .done(function (resp) {
+
         for (var ticker in resp) {
           if (resp.hasOwnProperty(ticker)) {
             for (var type in resp[ticker]) {
@@ -340,8 +347,28 @@ $t->setLanguage($l);
             }
           }
         }
+
+        getAmountValue();
       });
 
+  }
+
+  function getAmountValue() {
+    var sum = 0;
+    $.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,VTC,UBQ&tsyms=USD').done(function(resp){
+
+      $(".box").each(function(e, b){
+        boxId = $(b).attr('id');
+        if (boxId.indexOf('raised') > -1 || boxId.indexOf('mined') > -1) {
+          var ticker = boxId.replace('box', '').replace('raised', '').replace('mined', '');
+          var amount = parseFloat(b.innerText) * resp[ticker]['USD'];
+          if (amount > 0) {
+            sum += amount;
+          }
+        }
+      });
+      $("#collected").text("$"+parseFloat(Math.round(sum * 100) / 100).toFixed(2));
+    });
   }
 
   refresh();
