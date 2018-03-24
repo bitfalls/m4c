@@ -7,7 +7,7 @@ return [
 
     "eth_raised" => "Sakupljeno ETH",
     "eth_mined"  => "Izrudareno ETH",
-    "eth_miners" => "ETH rudara",
+    "eth_miners" => "ETH MH/s",
 
     "ubq_raised" => "Sakupljeno UBQ",
     "ubq_mined"  => "Izrudareno UBQ",
@@ -15,7 +15,7 @@ return [
 
     "vtc_raised" => "Sakupljeno VTC",
     "vtc_mined"  => "Izrudareno VTC",
-    "vtc_miners" => "VTC rudara",
+    "vtc_miners" => "VTC MH/s",
 	
 	"btc_raised" => "Sakupljeno BTC",
     "btc_mined"  => "Izrudareno BTC",
@@ -41,7 +41,10 @@ return [
 				<li>Ako ste početnik, preuzmite potrebni softver u "Download" tabu, pokrenite odabranu ".bat" datoteku, i pustite svoju grafičku karticu da kopa u ime dobrotvornih svrha.</li>
 				<li>Ako ste iskusni rudar i znate sve potrebne detalje, preusmjerite svoj Hashrate na par sati na neku od donjih adresa (koliko god dugo želite, nema minimuma ni maksimuma):
 				<ul>
-				<li>ETH: 0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A</li><li>VTC: VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9</li><li>UBQ: 0xC0057917E1bB3C684F24E18a99eEF8B1E632944b</li><li>BTC: 12o1KVeYig3i5JczvohZhYDcAKaS9LsWc5 <b>(za sada samo donacije)</b></li>
+				<li>ETH: <a href="https://etherscan.io/address/0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A" target="_blank">0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A</a></li>
+				<li>VTC: <a href="https://bitinfocharts.com/vertcoin/address/VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9" target="_blank">VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9</a></li>
+				<li>UBQ: <a href="https://ubiqscan.io/address/0xc0057917e1bb3c684f24e18a99eef8b1e632944b" target="_blank">0xC0057917E1bB3C684F24E18a99eEF8B1E632944b</a></li>
+				<li>BTC: <a href="https://blockchain.info/address/12o1KVeYig3i5JczvohZhYDcAKaS9LsWc5" target="_blank">12o1KVeYig3i5JczvohZhYDcAKaS9LsWc5</a> <b>(za sada samo donacije)</b></li>
 </ul></li>
 				</ul>
 				</p>

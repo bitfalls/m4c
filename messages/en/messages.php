@@ -8,7 +8,7 @@ return [
 
     "eth_raised" => "ETH raised",
     "eth_mined"  => "ETH mined",
-    "eth_miners" => "ETH miners",
+    "eth_miners" => "ETH MH/s",
 
     "ubq_raised" => "UBQ raised",
     "ubq_mined"  => "UBQ mined",
@@ -16,7 +16,7 @@ return [
 
     "vtc_raised" => "VTC raised",
     "vtc_mined"  => "VTC mined",
-    "vtc_miners" => "VTC miners",
+    "vtc_miners" => "VTC MH/s",
 	
 	"btc_raised" => "BTC raised",
     "btc_mined"  => "BTC mined",
@@ -42,7 +42,10 @@ return [
 				<li>If you are a beginner, download the .bat file, copy it to your miner and run it for a few hours. See the downloads tab for more info.</li>
 				<li>If you are an experienced miner and you know all the details, redirect your Hashrate for a few hours (as long as you want, no minimum or maximum) to one of the following addresses:
 				<ul>
-				<li>ETH: 0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A</li><li>VTC: VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9</li><li>UBQ: 0xC0057917E1bB3C684F24E18a99eEF8B1E632944b</li><li>BTC: 12o1KVeYig3i5JczvohZhYDcAKaS9LsWc5 <b>(donations only for now)</b></li>
+				<li>ETH: <a href="https://etherscan.io/address/0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A" target="_blank">0xc39eA9DB33F510407D2C77b06157c3Ae57247c2A</a></li>
+				<li>VTC: <a href="https://bitinfocharts.com/vertcoin/address/VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9" target="_blank">VsNpefSEA9nuNqcKQnxv6vkgofYWXkfNX9</a></li>
+				<li>UBQ: <a href="https://ubiqscan.io/address/0xc0057917e1bb3c684f24e18a99eef8b1e632944b" target="_blank">0xC0057917E1bB3C684F24E18a99eEF8B1E632944b</a></li>
+				<li>BTC: <a href="https://blockchain.info/address/12o1KVeYig3i5JczvohZhYDcAKaS9LsWc5" target="_blank">12o1KVeYig3i5JczvohZhYDcAKaS9LsWc5</a> <b>(donations only for now)</b></li>
 </ul></li>
 				</ul>
 				</p>
