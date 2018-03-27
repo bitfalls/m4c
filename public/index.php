@@ -28,6 +28,10 @@ if ( ! in_array($l, $languages)) {
 
 $t->setLanguage($l);
 
+//force tab open
+$tab = $_GET['t'] ?? null;
+
+
 ?>
 <!DOCTYPE html>
 <head>
@@ -278,22 +282,22 @@ $t->setLanguage($l);
 
     <div class="row" id="data-panels">
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#instructionsTab" data-toggle="tab"
+            <li <?= (($tab == null) ? 'class="active"' : '') ?> ><a href="#instructionsTab" data-toggle="tab"
                                   id="recentTab-link"><?= $t->t('tab1') ?></a>
             </li>
-            <li><a href="#downloadTab" data-toggle="tab"
+            <li <?= ($tab == "dl" ? 'class="active"' : '') ?> ><a href="#downloadTab" data-toggle="tab"
                    id="recentTab-link"><?= $t->t('tab3') ?></a>
             </li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane active" id="instructionsTab"><br/>
+            <div class="tab-pane  <?= ($tab == null ? "active" : "") ?>" id="instructionsTab"><br/>
                 <div class="well">
                     <?= $t->t('tab1_text') ?>
 
                 </div>
             </div>
 
-            <div class="tab-pane" id="downloadTab"><br/>
+            <div class="tab-pane <?= ($tab == "dl" ? "active" : "") ?>" id="downloadTab"><br/>
                 <div class="well">
                     <?= $t->t('tab2_text') ?>
 
@@ -317,6 +321,9 @@ $t->setLanguage($l);
             <div class="item partner"><a target="_blank" href="http://nanopool.org"><img
                             style="width:220px;" src="images/np.png"
                             alt="nanopool"></a></div>
+			<div class="item partner"><a target="_blank" href="http://provoco.me"><img
+                            style="width:220px;" src="images/provoco.png"
+                            alt="provoco"></a></div>
         </div>
     </div>
 
